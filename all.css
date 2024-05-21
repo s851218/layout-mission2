@@ -1,0 +1,639 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+  padding: 32px 312px;
+}
+
+.header-content {
+  max-width: 1296px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 90px;
+  height: 40px;
+  margin-right: 318px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav li {
+  padding: 4px 8px;
+  position: relative;
+}
+
+.nav-style {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.nav-style:hover {
+  font-weight: 600;
+}
+
+.nav-style::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 1px solid rgba(145, 145, 145, 1);
+  border-left: 1px solid rgba(145, 145, 145, 1);
+  transform: translate(-150%, -50%);
+}
+
+.nav-style::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(145, 145, 145, 1);
+  border-left: 1px solid rgba(145, 145, 145, 1);
+  transform: translate(-150%, 50%);
+}
+
+.nav-border::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 1px solid rgba(145, 145, 145, 1);
+  border-right: 1px solid rgba(145, 145, 145, 1);
+  transform: translate(50%);
+}
+
+.nav-border::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid rgba(145, 145, 145, 1);
+  border-right: 1px solid rgba(145, 145, 145, 1);
+  transform: translate(50%);
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(250, 250, 250, 1);
+}
+
+.quote-p {
+  max-width: 670px;
+  padding: 59px 71px;
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+}
+
+.quote-p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 72px;
+  height: 72px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
+}
+
+.quote-p::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 72px;
+  height: 72px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
+}
+
+.quote-p p {
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.quote-p p span {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.p-marginbottom {
+  margin-bottom: 16px;
+}
+
+.B-h3-p {
+  margin-right: 40px;
+}
+
+.B-C {
+  display: flex;
+  max-width: 636px;
+  text-align: center;
+}
+
+.B-h3 {
+  color: rgba(91, 91, 91, 1);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.B-h3::before {
+  content: "";
+  width: 24px;
+  border-bottom: 2px solid rgba(193, 193, 193, 1);
+  position: absolute;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+.C-h3 {
+  color: rgba(91, 91, 91, 1);
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.C-h3::before {
+  content: "";
+  width: 24px;
+  border-bottom: 2px solid rgba(193, 193, 193, 1);
+  position: absolute;
+  bottom: 0;
+  transform: translateX(50%);
+}
+
+.works-list {
+  width: 100%;
+  max-width: 1296px;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.works-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.m-b-72 {
+  margin-bottom: 72px;
+}
+
+.works-group img {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 16px;
+  border: 1px solid rgba(241, 241, 241, 1);
+  border-radius: 8px;
+}
+
+.works-group h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  margin: 0 0 8px 16px;
+}
+
+.works-group p {
+  color: rgba(145, 145, 145, 1);
+  margin: 0 0 24px 16px;
+}
+
+.works-group-list {
+  max-width: 636px;
+}
+
+.works-tags {
+  display: flex;
+  gap: 16px;
+  margin-left: 16px;
+}
+
+.works-tags a {
+  display: block;
+  padding: 4px 12px;
+  background: rgba(241, 241, 241, 1);
+  border-radius: 16px;
+  text-decoration: none;
+  color: rgba(59, 59, 59, 1);
+}
+
+.works-tags a:hover {
+  background: rgba(59, 59, 59, 1);
+  color: rgba(241, 241, 241, 1);
+  transition: 0.5s;
+}
+
+.m-t-80 {
+  margin-top: 80px;
+}
+
+.m-b-80 {
+  margin-bottom: 80px;
+}
+
+.paginator-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.paginator-group a {
+  display: block;
+  padding: 2px 13px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: rgba(59, 59, 59, 1);
+}
+
+.paginator-group a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.footer {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+}
+
+.footer-content {
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  padding: 80px 0px;
+  justify-content: space-between;
+}
+
+.footer-info img {
+  width: 120px;
+  height: 54px;
+  margin-bottom: 24px;
+}
+
+.footer-info p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.footer-info a {
+  display: block;
+  margin-top: 24px;
+  font-size: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(145, 145, 145, 1);
+}
+
+.footer-sociality {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 306px;
+}
+
+.footer-sociality img {
+  width: 56px;
+  height: 56px;
+}
+
+.footer-sociality li a {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list-style1 a {
+  display: block;
+  width: 100%;
+  padding: 8px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+}
+
+.footer-list-style2 a {
+  display: block;
+  width: 100%;
+  padding: 8px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(193, 193, 193, 1);
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(59, 59, 59, 1);
+  background: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    padding: 32px 0 32px 160px;
+  }
+
+  .header-content {
+    max-width: 992px;
+  }
+
+  .logo {
+    margin-left: 0px;
+    margin-right: 16%;
+  }
+
+  .works-list {
+    max-width: 992px;
+    padding: 80px 5%;
+  }
+
+  .works-group-list {
+    width: 50%;
+    padding: 0 12px;
+  }
+
+  .footer-content {
+    max-width: 992px;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 32px 0px;
+  }
+
+  .header-content {
+    max-width: 737px;
+  }
+
+  .logo {
+    margin-left: 0px;
+    margin-right: 16%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .quote-p {
+    max-width: 100%;
+    padding: 64px 71px 40px 71px;
+    margin-bottom: 0px;
+  }
+
+  .quote-p p {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .quote-p::before {
+    width: 64px;
+    height: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .quote-p::after {
+    display: none;
+  }
+
+  .B-C {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+  }
+
+  .B-h3-p {
+    margin-right: 0px;
+  }
+
+  .B-p {
+    margin-bottom: 40px;
+  }
+
+  .works-list {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .works-group-list {
+    width: 100%;
+    max-width: 768px;
+    margin-bottom: 48px;
+  }
+
+  .m-t-80 {
+    margin-top: 0px;
+  }
+
+  .m-b-80 {
+    margin-bottom: 0px;
+  }
+
+  .m-b-72 {
+    margin-bottom: 0px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 40px 12px;
+    align-items: center;
+  }
+
+  .footer-info {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+  }
+}
+
+@media (max-width: 375px) {
+  .B-p {
+    margin-bottom: 20px;
+  }
+}
